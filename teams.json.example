@@ -1,0 +1,10 @@
+[
+  {
+    "teamId": "team_id_1",
+    "apiKey": "api_key_for_team_1"
+  },
+  {
+    "teamId": "team_id_2",
+    "apiKey": "api_key_for_team_2"
+  }
+] 

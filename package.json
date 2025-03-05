@@ -1,0 +1,24 @@
+{
+  "name": "uniform-sso-migration",
+  "version": "1.0.0",
+  "description": "Migration script for Uniform.app SSO users",
+  "main": "dist/index.js",
+  "scripts": {
+    "build": "tsc",
+    "start": "node dist/index.js",
+    "dev": "ts-node src/index.ts",
+    "test": "ts-node src/index.ts --teams-file ./teams.json --mark-obsolete --no-dry-run",
+    "test-delete": "ts-node src/index.ts --teams-file ./teams.json --delete-members --no-dry-run",
+    "test-withBackup": "ts-node src/index.ts --teams-file ./teams.json --no-delete-members --backup --no-dry-run"
+  },
+  "dependencies": {
+    "axios": "^1.6.2",
+    "dotenv": "^16.3.1",
+    "commander": "^11.1.0"
+  },
+  "devDependencies": {
+    "@types/node": "^20.10.0",
+    "ts-node": "^10.9.1",
+    "typescript": "^5.3.2"
+  }
+} 
